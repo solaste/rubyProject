@@ -1,0 +1,10 @@
+<%= @user.each do |u|    %>
+<h1 style="color:red">user : <%=  u.user  %> , email  : <%= u.email %> </p>
+
+<% end %>
+
+<%= form_for(:admin, url: admin_path) do |t|  %>
+    <p><%= t.text_field :user, :placeholder => 'Utilisateur' %> </P>
+    <p style="color:red"> <%= t.submit "Supprimer" %> </p>
+
+<%  end %>

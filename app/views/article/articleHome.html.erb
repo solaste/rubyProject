@@ -1,0 +1,11 @@
+<% if current_user %>
+<p style="color:red"> echo </p>
+<%else %>
+
+<%end%>
+
+<%= form_for(:article, url: article_path) do |c| %>
+<p><%= c.text_field :title, :placeholder => "Entre le titre de l'article"%></p>
+<p><%= c.text_field :content, :placeholder => "Entré L'article" %></p>
+<p><%= c.submit "Envoyé l'article" %></p>
+<% end %>

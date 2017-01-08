@@ -1,0 +1,23 @@
+<% if session[:connected] %>
+<script type="text/javascript" src="assets/notifaos.js"></script>
+<script type="text/javascript" src="assets/notif.js"></script>
+
+
+<script type="text/javascript">
+  notif("Connecté", "Connexion Effectué", "success");
+</script>
+<%= session[:connected] = nil %>
+
+<% else %>
+
+
+<%end%>
+<% if current_user %>
+<p style="color:black"> Bonjour <%= current_user.user %> </p>
+<p><%= link_to "Log out" , logout_path, method: 'get' %></p>
+<% else  %>
+
+
+
+
+<% end %>
