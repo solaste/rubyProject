@@ -2,13 +2,13 @@
 lock "3.7.1"
 
 set :application, "smfr.ddns.net"
-set :repo_url, "git@github.com/solaste/rubyProject.git"
+set :repo_url, "/home/solaste/git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "~/var/www/smfr.ddns.net"
+set :deploy_to, "/home/solaste/smfr.ddns.net"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -28,7 +28,7 @@ set :deploy_to, "~/var/www/smfr.ddns.net"
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
- set :nginx_config_name, "default"
+ set :nginx_config_name, "smfr.ddns.net"
  set :nginx_server_name, "smfr.ddns.net"
 # Default value for keep_releases is 5
 # set :keep_releases, 5
