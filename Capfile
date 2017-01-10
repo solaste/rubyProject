@@ -28,7 +28,7 @@ install_plugin Capistrano::SCM::Git
 #
 
  require 'rvm1/capistrano3'
- require "capistrano/rvm"
+ 
  require "capistrano/rails"
  require "capistrano/puma"
  require "capistrano/puma/nginx"
