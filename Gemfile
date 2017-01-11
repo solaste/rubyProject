@@ -44,10 +44,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
  #Deploiement
+ gem 'json',github: "flori/json", branch: "v1.8"
  gem 'capistrano', '~> 3.6'
  gem 'capistrano-rails', '~> 1.1'
- gem 'rvm1-capistrano3', require: false
-
- gem 'capistrano3-puma', github: "seuros/capistrano-puma"
-
+ gem 'capistrano-rvm'
+ gem 'capistrano3-puma' , group: :development
 end

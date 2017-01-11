@@ -8,7 +8,6 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
   server "smfr.ddns.net", user: 'root', roles: %(app web db), ssh_options: {forward_agent: true}
 
-set :deploy_to, "/home/solaste/smfr.ddns.net"
 
 # role-based syntax
 # ==================
